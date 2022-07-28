@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.NovoProjetoActivity">
+
+    <TextView
+        android:id="@+id/novo_projeto_txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/novo_projeto_txt_titulo"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/novo_projeto_txt_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/novo_projeto_txt_subtitulo"
+        android:textColor="@color/grafite_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novo_projeto_txt_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/novo_projeto_btn_create"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novo_projeto_txt_subtitle">
+
+        <TextView
+            android:id="@+id/novo_projeto_txt_projeto_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/novo_projeto_txt_projeto_titulo"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/novo_projeto_edt_projeto_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_shape"
+            android:backgroundTint="@color/grafite_200"
+            android:ems="10"
+            android:hint="@string/novo_projeto_txt_projeto_titulo_hint"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/yellow_200"
+            android:textColorHint="@color/yellow_900" />
+
+        <TextView
+            android:id="@+id/novo_projeto_txt_projeto_orcamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/novo_projeto_txt_projeto_orcamento"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/novo_projeto_edt_projeto_orcamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_shape"
+            android:backgroundTint="@color/grafite_200"
+            android:ems="10"
+            android:hint="@string/novo_projeto_txt_projeto_orcamento_hint"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/yellow_200"
+            android:textColorHint="@color/yellow_900" />
+
+        <TextView
+            android:id="@+id/novo_projeto_txt_projeto_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/novo_projeto_txt_projeto_descricao"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/novo_projeto_edt_projeto_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_shape"
+            android:backgroundTint="@color/grafite_200"
+            android:ems="10"
+            android:hint="@string/novo_projeto_txt_projeto_descricao_hint"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/yellow_200"
+            android:textColorHint="@color/yellow_900" />
+
+        <TextView
+            android:id="@+id/novo_projeto_txt_projeto_categoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/novo_projeto_txt_projeto_categoria"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_shape"
+            android:backgroundTint="@color/grafite_200"
+            android:entries="@array/novo_projeto_txt_projeto_categoria_array"
+            android:minHeight="48dp"
+            android:spinnerMode="dropdown" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/novo_projeto_btn_create"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/grafite_200"
+        android:fontFamily="sans-serif"
+        android:text="@string/novo_projeto_btn_criar"
+        android:textColor="@color/yellow_200"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/square_shape"
+        app:itemBackground="@drawable/square_shape"
+        app:itemIconTint="@color/yellow_200"
+        app:itemTextColor="@color/yellow_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/navigation" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

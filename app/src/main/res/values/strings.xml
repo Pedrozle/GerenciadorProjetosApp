@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Costs</string>
+
+    <!-- Menu -->
+    <string name="menu_navigation_home">Página Inicial</string>
+    <string name="menu_navigation_create">Criar Projeto</string>
+    <string name="menu_navigation_menu">Menu</string>
+    <string name="menu_navigation_projetos">Projetos</string>
+
+    <!-- Card Projeto-->
+    <string name="card_txt_template">Template String</string>
+    <string name="card_txt_categoria">Categoria:</string>
+    <string name="card_txt_orcamento">Orçamento:</string>
+    <string name="card_txt_saldo_restante">Disponível:</string>
+    <string name="card_txt_descricao">Descrição:</string>
+    <string name="card_txt_cat_dev">Desenvolvimento</string>
+    <string name="card_txt_cat_mod">Modelagem</string>
+    <string name="card_txt_cat_infra">Infraestrutura</string>
+
+    <string name="card_btn_acessar">Acessar</string>
+    <string name="card_btn_apagar">Apagar</string>
+
+    <!-- Card Serviço -->
+    <string name="card_service_title_hint">Contratar Dev</string>
+    <string name="card_service_custo">Custo:</string>
+    <string name="card_service_custo_hint">R$ 5.000</string>
+    <string name="card_service_descricao_hint">Irá modelar as namoradas disponíveis no jogo</string>
+
+    <string name="card_service_btn_apagar">Apagar</string>
+
+
+    <!-- Main Activity -->
+    <string name="main_btn_create">Criar Projeto</string>
+
+    <string name="main_txt_title">Boas Vindas ao Costs!</string>
+    <string name="main_txt_subtitle">O seu gerenciador de projetos</string>
+
+    <!-- Projetos Activity -->
+    <string name="projetos_txt_title">Meus Projetos</string>
+    <string name="projetos_txt_subtitle">Projetos</string>
+
+    <!-- Novo Projeto Activity -->
+    <string name="novo_projeto_txt_titulo">Criar Novo Projeto</string>
+    <string name="novo_projeto_txt_subtitulo">Crie seus projetos</string>
+    <string name="novo_projeto_txt_projeto_titulo">Título do Projeto:</string>
+    <string name="novo_projeto_txt_projeto_orcamento">Orçamento Total:</string>
+    <string name="novo_projeto_txt_projeto_descricao">Descrição:</string>
+    <string name="novo_projeto_txt_projeto_categoria">Selecione a Categoria:</string>
+    <string name="novo_projeto_txt_projeto_titulo_hint">Insira o titulo do projeto</string>
+    <string name="novo_projeto_txt_projeto_orcamento_hint">Valor total estimado</string>
+    <string name="novo_projeto_txt_projeto_descricao_hint">Descreva a motivação para este projeto</string>
+
+    <string name="novo_projeto_btn_criar">Criar Projeto</string>
+
+    <string-array name="novo_projeto_txt_projeto_categoria_array">
+        <item>Selecione uma Categoria:</item>
+        <item>Infraestrutura</item>
+        <item>Design</item>
+        <item>Desenvolvimento</item>
+        <item>Planejamento</item>
+    </string-array>
+
+    <!-- Projeto Activity -->
+    <string name="projeto_txt_title_hint">VR GirlFriend Simulator 2</string>
+    <string name="projeto_txt_services">Serviços</string>
+    <string name="projeto_txt_template">Template String</string>
+    <string name="projeto_txt_categoria">Categoria:</string>
+    <string name="projeto_txt_orcamento">Orçamento:</string>
+    <string name="projeto_txt_saldo_restante">Disponível:</string>
+    <string name="projeto_txt_descricao">Descrição:</string>
+    <string name="projeto_txt_cat_dev">Desenvolvimento</string>
+    <string name="projeto_txt_cat_mod">Modelagem</string>
+    <string name="projeto_txt_cat_infra">Infraestrutura</string>
+
+    <string name="projeto_btn_editar">Editar Projeto</string>
+    <string name="projeto_btn_adicionar_servico">Adicionar Serviço</string>
+
+</resources>
