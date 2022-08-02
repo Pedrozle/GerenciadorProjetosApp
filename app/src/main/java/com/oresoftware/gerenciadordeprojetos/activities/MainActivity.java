@@ -2,6 +2,9 @@ package com.oresoftware.gerenciadordeprojetos.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,24 +19,14 @@ import com.oresoftware.gerenciadordeprojetos.R;
 
 public class MainActivity extends AppCompatActivity{
 
-    private Button btn_create;
     private BottomNavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        btn_create = findViewById(R.id.main_btn_create);
+        replaceFragment(new MainFragment());
         navigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView);
-
-        btn_create.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, NovoProjetoActivity.class);
-                startActivity(intent);
-            }
-        });
 
         navigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -42,17 +35,15 @@ public class MainActivity extends AppCompatActivity{
                 switch (item.getItemId()) {
 
                     case R.id.navigation_home:
-                        Toast.makeText(MainActivity.this, "Home", Toast.LENGTH_SHORT).show();
+                        replaceFragment(new MainFragment());
                         break;
 
                     case R.id.navigation_projetos:
-                        intent = new Intent(MainActivity.this, ProjetosActivity.class);
-                        startActivity(intent);
+                        replaceFragment(new ProjetosFragment());
                         break;
 
                     case R.id.navigation_create_project:
-                        intent = new Intent(MainActivity.this, NovoProjetoActivity.class);
-                        startActivity(intent);
+                        replaceFragment(new NovoProjetoFragment());
                         break;
 
                     case R.id.navigation_menu:
@@ -65,6 +56,36 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
+
+    }
+
+    public void replaceFragment(Fragment fragment){
+
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction fmt = fm.beginTransaction();
+        fmt.replace(R.id.fragmentContainerView, fragment);
+        fmt.commit();
+
+    }
+
+    public void replaceSelectedMenu(int id){
+
+        switch (id) {
+
+            case 1:
+                navigationView.setSelectedItemId(R.id.navigation_home);
+                break;
+
+            case 2:
+                navigationView.setSelectedItemId(R.id.navigation_projetos);
+                break;
+
+            case 3:
+                navigationView.setSelectedItemId(R.id.navigation_create_project);
+                break;
+
+
+        }
 
     }
 

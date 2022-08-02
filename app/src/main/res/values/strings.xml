@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">Costs</string>
+    <string name="atencao">Atenção</string>
+
+    <string name="erro_categoria">Você precisa selecionar uma categoria, para adicionar um projeto</string>
+    <string name="erro_projeto_titulo">Você precisa adicionar o titulo do projeto</string>
+    <string name="erro_projeto_orcamento">Você precisa adicionar o orcamento do projeto</string>
+
+    <string name="erro_service_titulo">Você precisa adicionar o titulo do serviço</string>
+    <string name="erro_service_orcamento">Você precisa adicionar o custo serviço</string>
+    <string name="erro_service_custo">Não é possível adicionar o serviço, seu valor é maior que o saldo disponível</string>
 
     <!-- Menu -->
     <string name="menu_navigation_home">Página Inicial</string>
@@ -42,6 +51,8 @@
     <!-- Novo Projeto Activity -->
     <string name="novo_projeto_txt_titulo">Criar Novo Projeto</string>
     <string name="novo_projeto_txt_subtitulo">Crie seus projetos</string>
+    <string name="novo_projeto_txt_titulo_editar">Editar o Projeto</string>
+    <string name="novo_projeto_txt_subtitulo_editar">Edite seu projeto</string>
     <string name="novo_projeto_txt_projeto_titulo">Título do Projeto:</string>
     <string name="novo_projeto_txt_projeto_orcamento">Orçamento Total:</string>
     <string name="novo_projeto_txt_projeto_descricao">Descrição:</string>
@@ -51,6 +62,7 @@
     <string name="novo_projeto_txt_projeto_descricao_hint">Descreva a motivação para este projeto</string>
 
     <string name="novo_projeto_btn_criar">Criar Projeto</string>
+    <string name="novo_projeto_btn_editar">Editar Projeto</string>
 
     <string-array name="novo_projeto_txt_projeto_categoria_array">
         <item>Selecione uma Categoria:</item>
@@ -59,6 +71,18 @@
         <item>Desenvolvimento</item>
         <item>Planejamento</item>
     </string-array>
+
+    <!-- Service Activity -->
+    <string name="services_txt_titulo">Criar Serviço</string>
+    <string name="services_txt_subtitulo">Crie e adicione serviços ao seu projeto</string>
+    <string name="services_txt_service_titulo">Título do Serviço</string>
+    <string name="services_txt_service_titulo_hint">Contratar dev</string>
+    <string name="services_txt_service_custo">Custo do Serviço</string>
+    <string name="services_txt_service_custo_hint">1000</string>
+    <string name="services_txt_service_descricao">Descrição</string>
+    <string name="services_txt_service_descricao_hint">o cara vai desenvolver</string>
+
+    <string name="services_btn_criar">Criar Serviço</string>
 
     <!-- Projeto Activity -->
     <string name="projeto_txt_title_hint">VR GirlFriend Simulator 2</string>
@@ -74,5 +98,6 @@
 
     <string name="projeto_btn_editar">Editar Projeto</string>
     <string name="projeto_btn_adicionar_servico">Adicionar Serviço</string>
+
 
 </resources>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".activities.NovoProjetoActivity">
+    tools:context=".activities.NovoServiceFragment">
 
     <TextView
         android:id="@+id/novo_projeto_txt_title"
@@ -20,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.053" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <TextView
         android:id="@+id/novo_projeto_txt_subtitle"
@@ -40,7 +40,7 @@
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
@@ -48,7 +48,8 @@
         app:layout_constraintBottom_toTopOf="@+id/novo_projeto_btn_create"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/novo_projeto_txt_subtitle">
+        app:layout_constraintTop_toBottomOf="@+id/novo_projeto_txt_subtitle"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/novo_projeto_txt_projeto_titulo"
@@ -73,6 +74,7 @@
             android:inputType="text"
             android:padding="16dp"
             android:textColor="@color/yellow_200"
+            android:textColorHighlight="@color/yellow_900"
             android:textColorHint="@color/yellow_900" />
 
         <TextView
@@ -95,7 +97,7 @@
             android:backgroundTint="@color/grafite_200"
             android:ems="10"
             android:hint="@string/novo_projeto_txt_projeto_orcamento_hint"
-            android:inputType="text"
+            android:inputType="number"
             android:padding="16dp"
             android:textColor="@color/yellow_200"
             android:textColorHint="@color/yellow_900" />
@@ -137,14 +139,14 @@
             android:textStyle="bold" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/novo_projeto_sp_projeto_categoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/round_shape"
             android:backgroundTint="@color/grafite_200"
             android:entries="@array/novo_projeto_txt_projeto_categoria_array"
             android:minHeight="48dp"
-            android:spinnerMode="dropdown" />
+            android:spinnerMode="dialog" />
 
 
     </LinearLayout>
@@ -160,26 +162,10 @@
         android:textColor="@color/yellow_200"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/square_shape"
-        app:itemBackground="@drawable/square_shape"
-        app:itemIconTint="@color/yellow_200"
-        app:itemTextColor="@color/yellow_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:menu="@menu/navigation" />
-
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

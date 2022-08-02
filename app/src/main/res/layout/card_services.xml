@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@drawable/round_shape"
     android:orientation="vertical"
@@ -44,14 +44,13 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/card_service_txt_categoriaL"
+            android:id="@+id/card_service_txt_custoL"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -62,7 +61,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/card_service_txt_categoriaT"
+            android:id="@+id/card_service_txt_custoT"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -80,7 +79,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/card_service_txt_orcamentoT"
+            android:id="@+id/card_service_txt_descricaoT"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -99,6 +98,7 @@
 
         <Button
             android:id="@+id/card_service_btn_projeto_apagar"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="235dp"
             android:layout_height="87dp"
             android:layout_margin="5dp"
@@ -114,8 +114,7 @@
             app:layout_constraintHorizontal_bias="0.482"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/main_icon"
-            app:layout_constraintVertical_bias="0.377"
-            style="?android:attr/buttonBarButtonStyle" />
+            app:layout_constraintVertical_bias="0.377" />
     </LinearLayout>
 
 </LinearLayout>

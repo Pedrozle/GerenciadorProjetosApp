@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "949922284176",
+    "project_id": "gerenciador-de-projetos-8e662",
+    "storage_bucket": "gerenciador-de-projetos-8e662.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949922284176:android:6869de3fed2857b9e0ce15",
+        "android_client_info": {
+          "package_name": "com.oresoftware.gerenciadordeprojetos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949922284176-c55ce5o5qsr6bm9utacgue2i0nnmesi8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACNiXNjstmaRZd6FXiGTe7xZ2ipVWgTQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949922284176-c55ce5o5qsr6bm9utacgue2i0nnmesi8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
